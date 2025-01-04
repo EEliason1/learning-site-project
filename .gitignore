@@ -1,0 +1,52 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log.*
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# Build Output
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/.vercel/
+/frontend/.env.local
+/backend/dist/
+/backend/build/
+
+# Dependency directories
+/backend/node_modules/
+/frontend/node_modules/
+
+# Docker
+docker-compose.override.yml
+
+# IDE Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Miscellaneous
+*.bak
+*.tmp
+*.lock
+*.cache
+coverage/
