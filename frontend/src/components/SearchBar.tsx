@@ -3,7 +3,7 @@ import React from "react";
 interface SearchBarProps {
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onSearch: () => void; // Function to trigger the search
+  onSearch: () => void;
   placeholder?: string;
 }
 
@@ -15,16 +15,14 @@ const SearchBar: React.FC<SearchBarProps> = ({
 }) => {
   return (
     <div className="relative m-0">
-      {/* Input field */}
       <input
         type="text"
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="p-2 pl-4 pr-10 border rounded w-full" // Add padding on the right for the spinner
+        className="p-2 pl-4 pr-10 border rounded w-full"
       />
 
-      {/* Hourglass spinner (clickable) */}
       <button
         onClick={onSearch}
         className="absolute right-2 top-1/2 transform -translate-y-1/2"

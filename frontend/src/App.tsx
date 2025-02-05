@@ -9,11 +9,12 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container mx-auto p-4">
+      <div className="mx-0 p-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/course/:id" element={<CoursePage />} />
+          {/*create sign-in, sign-up, course catalog, profile*/}
         </Routes>
       </div>
     </Router>

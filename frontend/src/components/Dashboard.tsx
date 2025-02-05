@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CourseCard from "./CourseCard";
+import CourseCard from "./DashboardCourseCard";
 import { Responsive, WidthProvider } from "react-grid-layout";
 
 // Wrap Responsive with WidthProvider to allow dynamic layouts
