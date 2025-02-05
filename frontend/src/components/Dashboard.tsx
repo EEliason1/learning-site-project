@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CourseCard from "./DashboardCourseCard";
+import DashboardCourseCard from "./DashboardCourseCard";
 import { Responsive, WidthProvider } from "react-grid-layout";
 
 // Wrap Responsive with WidthProvider to allow dynamic layouts
@@ -33,7 +33,7 @@ const Dashboard: React.FC = () => {
         {courses.map((course) => (
           <div key={course.id} className="course-card-wrapper">
             <Link to={`/course/${course.id}`}>
-              <CourseCard name={course.name} progress={course.progress} />
+              <DashboardCourseCard name={course.name} progress={course.progress} />
             </Link>
           </div>
         ))}

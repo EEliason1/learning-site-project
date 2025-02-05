@@ -1,11 +1,11 @@
 import React from "react";
 
-interface CourseCardProps {
+interface DashboardCourseCardProps {
   name: string;
   progress: number;
 }
 
-const CourseCard: React.FC<CourseCardProps> = ({ name, progress }) => {
+const DashboardCourseCard: React.FC<DashboardCourseCardProps> = ({ name, progress }) => {
   return (
     <div className="bg-white p-4 rounded-lg shadow-md">
       <h2 className="text-xl font-semibold">{name}</h2>
@@ -17,4 +17,4 @@ const CourseCard: React.FC<CourseCardProps> = ({ name, progress }) => {
   );
 };
 
-export default CourseCard;
+export default DashboardCourseCard;
